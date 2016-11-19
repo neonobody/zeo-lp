@@ -1,0 +1,130 @@
+@import '../../scss/common';
+.guide{
+  .container{
+    @extend %clearfix;
+  }
+}
+.guide__info{
+  padding-top: 60px;
+  float: left;
+  width: 38.8%;
+  min-width: 345px;
+  .download-group{
+    margin: 40px auto 0;
+  }
+  @media all and ($lg-max) {
+    padding-top: 53px;
+  }
+  @media all and ($sm-max) {
+    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    min-width: 0;
+  }
+  @media all and ($sm-max) {
+    padding-top: 40px;
+  }
+}
+.guide__info__steps{
+  li{
+    display: block;
+    border: 1px solid $border;
+    min-height: 70px;
+    padding: 15px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    @media all and ($sm-max) {
+      min-height: 60px;
+      padding: 10px;
+    }
+    &>*{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+      line-height: 40px;
+      color: $step;
+      @media all and ($sm-max) {
+        font-size: 15px;
+      }
+    }
+    p{
+      margin: 0 20px 0 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      @media all and ($sm-max) {
+        margin-right: 10px;
+      }
+    }
+    .link, strong{
+      font-weight: 700;
+    }
+
+    .icon{
+      display: inline-block;
+      width: 50px;
+      line-height: 40px;
+      vertical-align: top;
+      &-icon-2{
+        font-size: 34px;
+      }
+      @media all and ($sm-max) {
+        width: 40px;
+      }
+    }
+  }
+}
+.guide__illustration{
+  width: 61.2%;
+  max-width: calc(100% - 345px);
+  float: right;
+  padding-top: 25px;
+  img{
+    max-width: 100%;
+    @media all and ($phone) {
+      display: none;
+    }
+  }
+  @media all and ($md-max) {
+    padding-top: 65px;
+    text-align: center;
+  }
+  @media all and ($sm-max) {
+    max-width: 100%;
+    width: 100%;
+    padding: 40px 0 0;
+  }
+}
+.guide__illustration__info{
+  padding: 8px 0 0 110px;
+  img{
+    display: inline-block;
+    vertical-align: middle;
+    &:first-child{
+      margin-right: 40px;
+      @media all and ($phone) {
+        margin: 0 auto 20px;
+        display: block;
+      }
+    }
+    @media all and ($phone) {
+      padding: 0;
+    }
+  }
+  @media all and ($lg-max) {
+    padding: 52px 0 0;
+    text-align: center;
+  }
+  @media all and ($md-max) {
+    padding-top: 78px;
+    text-align: center;
+  }
+  @media all and ($sm-max) {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 3% 0 0;
+  }
+  @media all and ($phone) {
+    padding: 0;
+  }
+}

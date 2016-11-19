@@ -1,0 +1,20 @@
+body{
+  font-family: ProximaNova, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $text;
+  background: $w;
+  line-height: 1.3em;
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  cursor: pointer;
+}

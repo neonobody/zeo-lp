@@ -1,0 +1,30 @@
+$w : #fff;
+$text: #737373;
+$icon: #7cce8d;
+$accent: #0af;
+$link: #018fd0;
+$light: #fafdff;
+
+$button: #00afff;
+$button-hover: #00a2ff;
+$button-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%);
+$button-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26);
+$button-box-shadow: 0 1px 0 #1b8bbf;
+$border-accent: #00b3ff;
+$border: #dde3e7;
+$icon: #7cce8d;
+
+$h1: #646464;
+$header-shadow: 0px -8px 8px 8px rgba(2, 2, 2, 0.5);
+$step: #414141;
+
+
+//size
+$lg-max: "max-width: 1100px";
+$lg-min: "min-width: 992px";
+$md-max: "max-width: 991px";
+$md-min: "min-width: 768px";
+$sm-max: "max-width: 767px";
+$sm-min: "min-width: 581px";
+$xs-max: "max-width: 580px";
+$phone: "max-width: 480px";

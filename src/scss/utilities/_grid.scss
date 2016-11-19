@@ -1,0 +1,17 @@
+header, footer, section {
+  width: 100%;
+  .container{
+    width: 1000px;
+    margin: 0 auto;
+    @media all and ($lg-min) and ($lg-max) {
+      width: 850px;
+    }
+    @media all and ($md-min) and ($md-max){
+      width: 730px;
+    }
+    @media all and ($sm-max){
+      width: calc(100% - 30px);
+    }
+
+  }
+}

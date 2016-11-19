@@ -1,0 +1,10 @@
+// typography settings
+h1{
+  font-size: 36px;
+  color: $h1;
+  font-weight: 300;
+  margin: 0;
+  @media all and ($sm-max){
+    font-size: 24px;
+  }
+}

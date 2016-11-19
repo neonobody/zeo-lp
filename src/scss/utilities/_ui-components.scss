@@ -1,0 +1,74 @@
+// Independent small components
+.icon{
+  color: #7cce8d;
+  font-size: 25px;
+}
+.link{
+  color: $link;
+  &:hover{
+    color: $link;
+  }
+}
+.download-group{
+  max-width: 388px;
+  width: 100%;
+  @media all and ($sm-max) {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .btn{
+    display: block;
+    text-align: center;
+    background-color: $button;
+    background-image: $button-gradient;
+    border-radius: 3px;
+    box-shadow: $button-box-shadow;
+    width: 100%;
+    height: 80px;
+    text-shadow: $button-text-shadow;
+    color: $w;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+    transition: .3s;
+    position: relative;
+    padding: 33px 30px 0 0;
+    &:hover{
+      background-color: $button-hover;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: calc(50% - 22px);
+      width: 42px;
+      height: 42px;
+      background: url(../../img/bottom.png) center no-repeat;
+      right: 20px;
+      border: 2px solid $w;
+      border-radius: 50%;
+      @media all and ($sm-max) {
+        width: 30px;
+        height: 30px;
+        top: calc(50% - 15px);
+      }
+    }
+    @media all and ($sm-max) {
+      padding-right: 0;
+    }
+    @media all and ($sm-max) {
+      font-size: 18px;
+      height: 60px;
+      padding: 23px 53px 0 0;
+    }
+  }
+  a:not(.btn){
+    font-size: 14px;
+    text-decoration: underline;
+    color: $link;
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+  }
+}

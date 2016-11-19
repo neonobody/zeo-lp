@@ -1,0 +1,67 @@
+@import '../../scss/common';
+header{
+  height: 74px;
+  padding-top: 13px;
+  box-shadow: $header-shadow;
+  @media all and ($sm-max){
+    height: 50px;
+    padding-top: 5px;
+  }
+  .container{
+    position: relative;
+    @extend %clearfix;
+  }
+  @media all and ($phone) {
+    height: auto;
+    padding: 10px 0;
+  }
+}
+.logo{
+  position: absolute;
+  left: 0;
+  top: 8px;
+  img{
+    max-width: 100%;
+  }
+  @media all and ($md-max){
+    position: static;
+    margin-top: 5px;
+    float: left;
+  }
+  @media all and ($phone) {
+    width: 132px;
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
+}
+.header__title{
+  color: $h1;
+  text-align: center;
+  span{
+    display: inline-block;
+    border: 1px solid $border-accent;
+    border-radius: 5px;
+    padding: 11px 5px;
+    margin-right: 5px;
+    @media all and ($sm-max){
+      padding: 8px 3px;
+    }
+    @media all and ($phone) {
+      padding: 7px 2px 5px;
+      margin-right: 2px;
+    }
+  }
+  @media all and ($md-max){
+    float: right;
+  }
+  @media all and ($xs-max){
+    font-size: 20px;
+  }
+  @media all and ($phone) {
+    font-size: 19px;
+    float: none;
+    margin-top: 10px;
+  }
+
+}
