@@ -1,2 +1,4 @@
-# react-router-course-ru
-Код для раздела [Подтверждение перехода](https://maxfarseer.gitbooks.io/react-router-course-ru/content/podtverzhdenie_perehoda.html)
+Type in terminal:
+- for install: npm i
+- for start the project: npm start + open localhost:3000 in your browser
+- for start the project:npm run-script build

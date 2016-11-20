@@ -34,6 +34,9 @@
       &:hover{
         background: url(../../img/cnn.png) center no-repeat;
       }
+      @media all and ($sm-max) {
+        background: url(../../img/cnn.png) center no-repeat;
+      }
     }
     &dezzain{
       background: url(../../img/dezzain-d.png) center no-repeat;
@@ -41,6 +44,10 @@
       &:hover{
         background: url(../../img/dezzain.png) center no-repeat;
       }
+      @media all and ($sm-max) {
+        background: url(../../img/dezzain.png) center no-repeat;
+      }
+
     }
     &forbes{
       background: url(../../img/forbes-d.png) center no-repeat;
@@ -48,11 +55,17 @@
       &:hover{
         background: url(../../img/forbes.png) center no-repeat;
       }
+      @media all and ($sm-max) {
+        background: url(../../img/forbes.png) center no-repeat;
+      }
     }
     &mach{
-      background: url(../../img/mach-machines-d.png) center no-repeat;
+      background: url(../../img/machmachines-d.png) center no-repeat;
       width: 149px;
       &:hover{
+        background: url(../../img/machmachines.png) center no-repeat;
+      }
+      @media all and ($sm-max) {
         background: url(../../img/machmachines.png) center no-repeat;
       }
     }
