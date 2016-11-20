@@ -1,1 +1,107 @@
 @import '../../scss/common';
+.download{
+  padding: 38px 0;
+  .container{
+    @extend %clearfix;
+    max-width: 950px;
+    position: relative;
+    text-align: center;
+    &>div{
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      &:not(.download-group){
+        position: absolute;
+        @media all and ($sm-max) {
+          position: static;
+        }
+      }
+    }
+  }
+  .download-group{
+    @media all and ($md-max) {
+      max-width: 310px;
+    }
+    @media all and ($sm-max) {
+      float: right;
+      width: 100%;
+      max-width: 80%;
+      margin: 20px 10% 0;
+    }
+    @media all and ($phone) {
+      width: 100%;
+      max-width: 100%;
+      margin: 20px auto;
+      float: none;
+    }
+  }
+}
+.first-system{
+  left: 60px;
+  @media all and ($md-max) {
+    left: 0;
+  }
+  span{
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $first-system;
+    padding: 28px 38px 0;
+    background: url(../../img/stars.png) top center no-repeat;
+  }
+  p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: $first-system-2;
+    line-height: 16px;
+  }
+}
+.trust-count{
+  width: 205px;
+  height: 98px;
+  right: 0;
+  background: url(../../img/map.png) no-repeat;
+  color: $trust-count;
+  h6{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    margin: 2px 0 3px;
+  }
+  span {
+    display: inline-block;
+    position: relative;
+    margin: 4px auto 0px;
+    color: $trust-count-2;
+    font-size: 22px;
+    &::before {
+      content: '+';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      display: block;
+      position: absolute;
+      left: -8px;
+      top: 4px;
+    }
+    &::after {
+      content: '*';
+      position: absolute;
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      right: -8px;
+      top: 1px;
+    }
+  }
+  p{
+    margin: 0;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+}

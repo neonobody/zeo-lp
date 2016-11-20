@@ -5,10 +5,10 @@ export default function(){
     return (
         <section className="trust">
             <ul>
-                <li><img src={require('../../img/cnn.png')} alt=""/></li>
-                <li><img src={require('../../img/dezzain.png')} alt=""/></li>
-                <li><img src={require('../../img/forbes.png')} alt=""/></li>
-                <li><img src={require('../../img/machmachines.png')} alt=""/></li>
+                <li><a className="trust__cnn" href="#"></a></li>
+                <li><a className="trust__dezzain" href="#"></a></li>
+                <li><a className="trust__forbes" href="#"></a></li>
+                <li><a className="trust__mach" href="#"></a></li>
             </ul>
         </section>
     )

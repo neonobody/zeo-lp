@@ -1,5 +1,6 @@
 @import '../../scss/common';
 .guide{
+  padding-bottom: 40px;
   .container{
     @extend %clearfix;
   }
@@ -9,6 +10,17 @@
   float: left;
   width: 38.8%;
   min-width: 345px;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 12px);
+    width: 25px;
+    height: 12px;
+    background: url(../../img/polygon.png) center no-repeat;
+    filter: drop-shadow(0px 4px 2px $header-c);
+  }
   .download-group{
     margin: 40px auto 0;
   }
@@ -82,7 +94,7 @@
   img{
     max-width: 100%;
     @media all and ($phone) {
-      display: none;
+      //display: none;
     }
   }
   @media all and ($md-max) {

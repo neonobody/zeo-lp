@@ -1,1 +1,170 @@
 @import '../../scss/common';
+.tools{
+  background: $tools;
+  text-align: center;
+  min-height: 505px;
+  padding-bottom: 45px;
+  .container{
+    @extend %clearfix;
+  }
+  h2{
+    margin: 38px 0;
+    @media all and ($sm-max) {
+      margin: 30px 0 25px;
+    }
+  }
+  .container{
+    @extend %clearfix;
+    position: relative;
+  }
+  &__container{
+    padding: 8px 0 0;
+    width: calc(100% - 330px);
+    float: left;
+    @media all and ($sm-max) {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+    ul{
+      @media all and ($sm-max) {
+        width: 100%;
+        padding: 10px 0;
+        //overflow-y: auto;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+    li{
+      display: inline-block;
+      width: 94px;
+      height: 54px;
+      background: $w;
+      margin-left: 15px;
+      position: relative;
+      box-shadow: 0 0 0 1px $tool-border;
+      border-radius: 0.2px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      transition: .2s;
+      @media all and ($sm-max) {
+        margin: 20px 7px;
+      }
+      span{
+        display: block;
+        background: url(../../img/sprite.png) no-repeat;
+        background-size: auto 110%;
+        background-position-y: -5px;
+        height: 100%;
+        width: 50px;
+        margin: 0 auto;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: 100%;
+        border-left: 47px solid transparent;
+        border-right: 47px solid transparent;
+        border-bottom: 28px solid $w;
+        filter: drop-shadow(0px -1px 0px #d2d2d2);
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100%;
+        border-left: 47px solid transparent;
+        border-right: 47px solid transparent;
+        border-top: 28px solid $w;
+        filter: drop-shadow(0px 1px 0px #d2d2d2);
+        z-index: 0;
+      }
+      &:nth-child(11n - 4){
+        @media all and ($xl) {
+          margin-left: 30px;
+        }
+      }
+      &:nth-child(11n){
+        @media all and ($xl) {
+          margin-right: 15px;
+        }
+      }
+      &:nth-child(7n-4){
+        @media all and ($lg-min) and ($lg-max) {
+          margin-right: 45px;
+        }
+      }
+      &:nth-child(7n-6){
+        @media all and ($lg-min) and ($lg-max) {
+          margin-left: 60px;
+        }
+      }
+      &:nth-child(5n-3){
+        @media all and ($md-min) and ($md-max) {
+          margin-right: 45px;
+        }
+      }
+      &:nth-child(5n-4){
+        @media all and ($md-min) and ($md-max) {
+          margin-left: 60px;
+        }
+      }
+
+      &.current{
+        border-color: $tool-current;
+        box-shadow: 0 0 0 1px $tool-current, 0 5px 0 1px $tool-current-shadow;
+        &::before{
+          filter: drop-shadow(0px -1px 0px $tool-current);
+        }
+        &::after{
+          z-index: 0;
+          filter: drop-shadow(0px 1px 0px $tool-current) drop-shadow(0px 5px 0px $tool-current-shadow);
+        }
+      }
+    }
+  }
+  &__current{
+    width: 280px;
+    position: absolute;
+    right: 0;
+    background: $w;
+    border-radius: 6px;
+    @media all and ($md-min) and ($md-max) {
+      right: 20px;
+    }
+    @media all and ($sm-max) {
+      position: static;
+      margin: 25px auto 0;
+    }
+    &__title{
+      background: $tool-current-img;
+      min-height: 142px;
+      border-radius: 6px 6px 0 0;
+      padding: 17px 0 17px;
+      h3{
+        margin: 10px 0 0;
+      }
+    }
+    &__img{
+      height: 78px;
+      width: 50px;
+      margin: 0 auto;
+      background: url(../../img/sprite.png) no-repeat;
+      background-size: auto 100%;
+      background-position-y: -5px;
+    }
+    &__content{
+      padding: 30px 20px 24px;
+      p{
+        margin: 0;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .light{
+        margin-top: 28px;
+      }
+    }
+  }
+}

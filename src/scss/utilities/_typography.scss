@@ -8,3 +8,17 @@ h1{
     font-size: 24px;
   }
 }
+h2{
+  font-size: 24px;
+  color: $h2;
+  font-weight: 400;
+  span{
+    color: $link;
+  }
+}
+h3{
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $h3;
+}

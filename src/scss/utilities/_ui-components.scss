@@ -9,6 +9,32 @@
     color: $link;
   }
 }
+
+.icon-icon-star{
+  color: $star;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+a.light{
+  color: $link;
+  border: 1px solid $light-button;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0 25px;
+  height: 45px;
+  line-height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .3s;
+  background: $w;
+  &:hover{
+    background: $light-button;
+    color: $w;
+  }
+}
+
 .download-group{
   max-width: 388px;
   width: 100%;
@@ -53,6 +79,9 @@
         height: 30px;
         top: calc(50% - 15px);
       }
+      @media all and ($phone) {
+        right: 15px;
+      }
     }
     @media all and ($sm-max) {
       padding-right: 0;
@@ -60,7 +89,7 @@
     @media all and ($sm-max) {
       font-size: 18px;
       height: 60px;
-      padding: 23px 53px 0 0;
+      padding: 23px 0 0;
     }
   }
   a:not(.btn){
@@ -68,7 +97,7 @@
     text-decoration: underline;
     color: $link;
     display: block;
-    margin-top: 14px;
+    margin-top: 12px;
     text-align: center;
   }
 }

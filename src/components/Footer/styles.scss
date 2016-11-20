@@ -1,1 +1,22 @@
 @import '../../scss/common';
+footer{
+  background: $footer;
+  padding: 15px 0;
+  text-align: center;
+  p{
+    font-size: 12px;
+    line-height: 20px;
+    color: $footer-text;
+    margin: 0;
+    a{
+      color: $link;
+    }
+  }
+  small{
+    font-size: 12px;
+    line-height: 18px;
+    color: $copy;
+    display: inline-block;
+    margin-top: 8px;
+  }
+}
