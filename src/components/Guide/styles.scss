@@ -14,12 +14,12 @@
   &::after{
     content: '';
     position: absolute;
-    top: 0;
+    top: -1px;
     left: calc(50% - 12px);
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-top: 12px solid $light;
-    filter: drop-shadow(0px 4px 2px $header-c);
+    filter: drop-shadow(0px 5px 3px $header-c);
   }
   .download-group{
     margin: 40px auto 0;
