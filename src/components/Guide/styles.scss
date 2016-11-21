@@ -16,9 +16,9 @@
     position: absolute;
     top: 0;
     left: calc(50% - 12px);
-    width: 25px;
-    height: 12px;
-    background: url(../../img/polygon.png) center no-repeat;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid $light;
     filter: drop-shadow(0px 4px 2px $header-c);
   }
   .download-group{
